@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;800;900&display=swap');
+@import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "./node_modules/animate.css/animate.min.css";
+
+$font-family-sans-serif:'Montserrat', sans-serif;
+$navbar-nav-link-padding-x : 1rem;
+$primary:green;
+$btn-padding-x-sm:.8rem;
+$btn-font-size-lg:12px;
+$btn-padding-y-lg:7px;
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.logo{
+    height: 40px;
+}
+
+.ser svg {
+     fill: $primary;
+}
+
+.aniCard{
+    transition: 0.8s;
+}
+
+.aniImg{
+    transition: 0.8s;
+}
+
+.aniCard:hover{
+    transform: translateY(-10px);
+}
+
+.aniCard:hover .aniImg{
+    transform: rotate(90deg);
+}
+
+.h:hover{
+    color: red !important ;
+}
+
+@include media-breakpoint-down(md) { 
+    #hone{
+        margin-top: 80px;
+        margin-bottom: 30px;
+margin-left: 10px;
+    }
+
+    #about{
+        margin-left: 10px;
+    }
+
+    #services{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    #menu{
+        margin-top: 30px;
+
+    }
+
+    .re{
+        flex-direction: column-reverse;
+    }
+
+    .cpp{
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+
+    .a{
+        margin-left: 18px;
+        margin-top: 19px;
+    }
+
+    .b{
+        margin-top: -2px;
+        margin-left: -10px;
+    }
+
+
+
+  
+ }
+
+ @include media-breakpoint-down(lg){
+    .element{
+        display: block;
+    }
+ }
